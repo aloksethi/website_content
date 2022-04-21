@@ -5,9 +5,9 @@
 
 # Appearance
 
-theme: minimal
+theme: classic
 day_night: true
-font: ''
+font: 'native'
 font_size: L
 
 # SEO
@@ -20,40 +20,40 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: test@example.org
-phone: 888 888 88 88
+#email:
+#phone: 
 address:
-  street: 450 Serra Mall
-  city: Stanford
-  region: CA
-  postcode: '94305'
-  country: United States
-  country_code: US
+  street: Erkki Koiso-Kanttilan katu 5
+  city: Oulu
+  region: 
+  postcode: '90540'
+  country: Finland
+  country_code: FI
 coordinates:
-  latitude: '37.4275'
-  longitude: '-122.1697'
-directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-office_hours:
-  - 'Monday 10:00 to 13:00'
-  - 'Wednesday 09:00 to 10:00'
-appointment_url: 'https://calendly.com'
+  latitude: '65.0580902'
+  longitude: '25.4692546'
+directions: Office TS490
+#office_hours:
+#  - 'Monday 10:00 to 13:00'
+#  - 'Wednesday 09:00 to 10:00'
+#appointment_url: 'https://calendly.com'
 contact_links:
-  - icon: twitter
-    icon_pack: fab
-    name: DM Me
-    link: 'https://twitter.com/Twitter'
-  - icon: skype
-    icon_pack: fab
-    name: Skype Me
-    link: 'skype:echo123?call'
-  - icon: keybase
-    icon_pack: fab
-    name: Chat on Keybase
-    link: 'https://keybase.io/'
-  - icon: comments
-    icon_pack: fas
-    name: Discuss on Forum
-    link: 'https://discourse.gohugo.io'
+#  - icon: twitter
+#    icon_pack: fab
+#    name: DM Me
+#    link: 'https://twitter.com/Twitter'
+#  - icon: skype
+#    icon_pack: fab
+#    name: Skype Me
+#    link: 'skype:echo123?call'
+#  - icon: keybase
+#    icon_pack: fab
+#    name: Chat on Keybase
+#    link: 'https://keybase.io/'
+#  - icon: comments
+#    icon_pack: fas
+#    name: Discuss on Forum
+#    link: 'https://discourse.gohugo.io'
 
 # Site header
 
@@ -79,9 +79,12 @@ highlight_languages:
   - r
   - python
   - latex
-math: false
-diagram: false
-privacy_pack: false
+  - cpp
+  - matlab
+  - maxima
+math: true
+diagram: true
+privacy_pack: true
 edit_page:
   repo_url: ''
   content_dir: ''
@@ -101,12 +104,14 @@ reading_time: true
 section_pager: false
 docs_section_pager: true
 sharing: true
+
 copyright_license:
-  enable: false
-  allow_derivatives: false
-  share_alike: true
-  allow_commercial: false
+  enable: true
+  allow_derivatives: true
+  share_alike: false
+  allow_commercial: true
   notice: 'This work is licensed under {license}'
+
 abstract_length: 135
 plugins_js: []
 avatar:
@@ -157,4 +162,4 @@ cms:
   local_backend: false
 icon:
   pack:
-    ai: false
+    ai: true
