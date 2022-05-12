@@ -41,6 +41,16 @@ A small collection of information regarding git
 * When on linux/WSL </br>
 `git config --local credential.helper 'cache --timeout=3600000'`
 
+## showing list of branches
+```
+git branch -a #shows both remote and local branches
+```
+## creating a branch and push it
+```
+git checkout -b <branch name>
+git push --set-upstream origin <branch name>
+```
+
 ## Useful links<br> 
 * [Git on a server](https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server#_getting_git_on_a_server)
 * [Supported git protocols](https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols)
