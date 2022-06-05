@@ -36,6 +36,12 @@ pip install pynvim
 
 # Format the file
 select the line or complete file in visual mode and press ctrl-k.
+Have now also added the auto formatter on save, so it will format .h,c,cpp,cc files on save
 
 # Splitting
 `vsplit` for vertical splitting. `split` for horizontal splitting.
+
+# Sourcing init.vim
+`:source $MYVIMRC`.
+`$MYVIMRC` is a special variable present in both vim and nvim.
+Check [page](https://dev.to/reobin/reload-init-vim-without-restarting-neovim-1h82) for more details.
