@@ -56,4 +56,5 @@ git push --set-upstream origin <branch name>
 * [Supported git protocols](https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols)
 * [Git remote](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 * [Undoing/Fixing/Removing commits from Git](http://sethrobertson.github.io/GitFixUm/fixup.html)
+* [Undoing/Fixing/Removing commits from Git](https://dangitgit.com/)
 
