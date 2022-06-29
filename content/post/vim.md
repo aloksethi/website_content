@@ -27,21 +27,28 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-
-# Setup
+A collection of various commands/things which i normally forget and search for.
+## Setup
 I am using neovim, so the init files are present in `~\.config\nvim`. The repository exist at [github](https://github.com/aloksethi/nvim). The formatter I am using `clang-format` needs python, so make sure `pynvim` exists (also in the virtual environment)
 ```shell
 pip install pynvim
 ```
 
-# Format the file
+## Format the file
 select the line or complete file in visual mode and press ctrl-k.
 Have now also added the auto formatter on save, so it will format .h,c,cpp,cc files on save
 
-# Splitting
+## Splitting
 `vsplit` for vertical splitting. `split` for horizontal splitting.
 
-# Sourcing init.vim
+## Sourcing init.vim
 `:source $MYVIMRC`.
 `$MYVIMRC` is a special variable present in both vim and nvim.
 Check [page](https://dev.to/reobin/reload-init-vim-without-restarting-neovim-1h82) for more details.
+
+## scriptname
+`:scriptname` will show the list of files loaded
+
+## variables
+`:let` will show all varaibles.`:echo <var name>` will show the specific
+variable. it will give error if the variable is not loaded.
