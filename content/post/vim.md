@@ -52,3 +52,6 @@ Check [page](https://dev.to/reobin/reload-init-vim-without-restarting-neovim-1h8
 ## variables
 `:let` will show all varaibles.`:echo <var name>` will show the specific
 variable. it will give error if the variable is not loaded.
+
+## settings
+`:set setting?` will show the value of that particular setting for example `:set foldmethod?` will tell the current fold method in use.
