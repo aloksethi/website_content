@@ -50,6 +50,8 @@ git branch -a #shows both remote and local branches
 git checkout -b <branch name>
 git push --set-upstream origin <branch name>
 ```
+## staging
+use the `-p` option to add individual hunks instead of complete file. you can further use `split/s` to break a given hunk into smaller chunks.
 
 ## Useful links<br> 
 * [Git on a server](https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server#_getting_git_on_a_server)
