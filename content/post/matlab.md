@@ -83,7 +83,7 @@ eqtext = [eqtext '\left({1-\sqrt{5}\over 2}\right)^n\right]$$'];
 text(1, 5, eqtext, 'Interpreter', 'Latex', 'FontSize', 12, 'Color', 'k')
 ```
 
-Split figures (Method 1, using subplot)
+Split figures (Method 1, using `subplot`)
 ```
 %% subplots with a main title and separate titles
 
@@ -102,7 +102,7 @@ subplot(2,2,4)
 plot(x_data, y_data,'-k'), grid on, title('subplot4'),legend('Simulated'), xlabel('X'), ylabel('Y')
 ```
 
-Split figures (Method 2, using nexttile)
+Split figures (Method 2, using `nexttile`)
 ```
 fig_num = 2;
 hf = figure(fig_num);
@@ -172,7 +172,8 @@ s11 = squeeze(sobj.Parameters(1,1,:));
 s21 = 20*log10(abs(squeeze(sobj.Parameters(2,1,:))));
 ```
 
-Importing data from excel files
+Importing data from excel files (Method 1, using `readtable`)
+good way if the table is nicely laid out in excel
 ```
 % excel file has different sheets named, 'ant', 'mmwbus', 'mmwbusinterchip'. Each sheet has a header too.
 % the structure will have memebers as name of those headers.
@@ -186,4 +187,11 @@ fdata_mchip = mbus_interchip_losses.freq/1e9;
 mchip_vloss = 10.^(mbus_interchip_losses.V_S21/10); % excel sheet has a header named "V_S21"
 mchip_hloss = 10.^(mbus_interchip_losses.H_S21/10);
 mean_mchip_loss = 10*log10(abs((mchip_vloss + mchip_hloss)/2));
+```
+
+Importing data from excel files (Method 2, using `readcell`)
+good way if picking data from arbitrary cells
+```
+excel_fname = 'trx_sw_hb_sim.xlsx';
+loss_data = cell2mat(readcell(excel_fname,'Sheet',1,'Range','J158:AD158')).';
 ```
