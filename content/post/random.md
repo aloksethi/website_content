@@ -43,3 +43,14 @@ this will give indication which library is missing
 annot load library /home/asethi/Desktop/robot-settings-2.8.6.23-linux64/plugins/platforms/libqxcb.so: (/home/asethi/Desktop/robot-settings-2.8.6.23-linux64/bin/../lib/libz.so.1: version `ZLIB_1.2.9' not found (required by /lib/x86_64-linux-gnu/libpng16.so.16))
 QLibraryPrivate::loadPlugin failed on "/home/asethi/Desktop/robot-settings-2.8.6.23-linux64/plugins/platforms/libqxcb.so" : "Cannot load library /home/asethi/Desktop/robot-settings-2.8.6.23-linux64/plugins/platforms/libqxcb.so: (/home/asethi/Desktop/robot-settings-2.8.6.23-linux64/bin/../lib/libz.so.1: version `ZLIB_1.2.9' not found (required by /lib/x86_64-linux-gnu/libpng16.so.16))"
 ```
+
+then copied the system libz.so to the local lib folder
+```
+cd robot-settings/
+cd lib/
+cp /lib/x86_64-linux-gnu/libz.so.1.2.11 .
+
+rm libz.so libz.so.1  #remove old symbolik links
+ln -s libz.so.1.2.11 libz.so
+ln -s libz.so.1.2.11 libz.so.1
+```
