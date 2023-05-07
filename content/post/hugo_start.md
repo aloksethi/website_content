@@ -27,7 +27,7 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-# Hugo
+
 * Creating a new post. Go to the root of the website and fire the below command. By default the title of the post will be the filename. 
 ```
 cd personal_website\website
@@ -37,7 +37,7 @@ Take a note on \ or / for the path. On mingw, use
 ```
 hugo new content/post/hugo_start.md
 ```
-Command options from the webpage as reference https://gohugo.io/commands/hugo_new/
+* Command options from the webpage as reference https://gohugo.io/commands/hugo_new/
 ```
 hugo new [path] [flags]
 -D, --buildDrafts            include content marked as draft
@@ -45,4 +45,8 @@ hugo new [path] [flags]
 * Starting the local webserver. Here `-D` includes the draft pages.
 ```
 hugo -D serve
+```
+* Creating a new project
+```
+hugo new --kind project project/prj_name
 ```
